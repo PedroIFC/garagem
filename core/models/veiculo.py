@@ -8,4 +8,4 @@ class Veiculo(models.Model):
     acessorios = models.ManyToManyField('Acessorio', related_name='veiculos')
 
     def __str__(self):
-        return f'id:{self.id} {self.modelo}({self.cor}) {self.ano}'
+        return f' {self.modelo} - {self.cor} {self.ano}'
